@@ -13,6 +13,8 @@ import { CirclePlus } from "lucide-react-native";
 import { Tasks } from "../../components/Tasks";
 
 export function Home() {
+  const [isFocused, setIsFocused] = useState(false);
+
   const [listTask, setListTask] = useState<string[]>([]);
   const [createTask, setCreateTask] = useState("");
   const [taskCompleted, setTTaskCompleted] = useState<{
@@ -79,9 +81,11 @@ export function Home() {
           <TextInput
             placeholder="Adicionar uma nova tarefa"
             placeholderTextColor={"#808080"}
-            style={styles.inputText}
+            style={[styles.inputText, isFocused && styles.inputTextFocused]}
             value={createTask}
             onChangeText={setCreateTask}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
           />
           <TouchableOpacity style={styles.button} onPress={handleTaskAdd}>
             <CirclePlus color={"#F2F2F2"} size={20} />

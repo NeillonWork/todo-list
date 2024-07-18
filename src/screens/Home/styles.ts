@@ -42,10 +42,13 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#0D0D0D",
     borderRadius: 6,
-    color:"#F2F2F2",
+    color: "#F2F2F2",
     backgroundColor: "#262626",
     marginEnd: 4,
     paddingLeft: 16,
+  },
+  inputTextFocused: {
+     borderColor: '#5E60CE'
   },
   button: {
     width: 52,
