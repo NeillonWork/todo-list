@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#1A1A1A",
   },
   containerVerticalSpace: {
+    flex: 1,
     paddingHorizontal: 24,
   },
   logoBox: {
@@ -14,7 +15,6 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#0D0D0D",
-    zIndex: 0,
   },
   logoImage: {
     width: 110.34,
@@ -37,7 +37,6 @@ export const styles = StyleSheet.create({
   },
   inputText: {
     flex: 1,
-    //width: "100%",
     height: 54,
     fontSize: 16,
     borderWidth: 1,
@@ -87,12 +86,11 @@ export const styles = StyleSheet.create({
   },
   EmptyText: {
     flex: 1,
-    flexDirection: "column",
-    fontSize: 14,
     justifyContent: "center",
     alignItems: "center",
     borderTopWidth: 1,
     borderTopColor: "#333333",
+    paddingTop: 20,
   },
   listEmptyTextBold: {
     fontWeight: "bold",
