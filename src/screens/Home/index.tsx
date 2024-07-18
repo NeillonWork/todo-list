@@ -31,8 +31,19 @@ export function Home() {
   }
 
   //REMOVER
-  function handleTaskRemove() {
-    Alert.alert("OK REMOVE");
+  function handleTaskRemove(task: string) {
+    // filtra minha listTask e retorna todos os createTask menos o task
+    // return console.log(listTask.filter(createTask => createTask !== task))
+    Alert.alert("Excluir tarefa", `Deseja realmente deletar esta tarefa? ${task}`, [
+      {
+        text: "Sim",
+        onPress: () => setListTask((oldListTask) => oldListTask.filter(createTask => createTask !== task))
+      },
+      {
+        text: "Não",
+        style: "cancel",
+      },
+    ]);
   }
 
   return (
@@ -76,7 +87,11 @@ export function Home() {
           data={listTask}
           keyExtractor={(item) => item}
           renderItem={({ item }) => (
-            <Tasks key={item} taskText={item} onRemove={handleTaskRemove} />
+            <Tasks
+              key={item}
+              taskText={item}
+              onRemove={() => handleTaskRemove(item)}
+            />
           )}
           showsVerticalScrollIndicator={false}
           contentContainerStyle={{ paddingBottom: 40 }} // Adiciona espaço inferior para rolagem
