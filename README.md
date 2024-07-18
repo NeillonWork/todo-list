@@ -36,7 +36,7 @@
 
 # Sobre
 <p>
-    Estudo realizado através da conclusão do modulo 01 de React-Native - Rocketseat. Aplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
+    Estudo realizado através da conclusão do modulo 01 de React-Native - <a href="https://app.rocketseat.com.br/" target="_blank"> Rocketseat</a>. Aplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
 </p>
 <ul>
 <li>Adicionar uma nova tarefa</li>
