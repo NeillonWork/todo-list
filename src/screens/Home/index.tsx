@@ -17,9 +17,9 @@ export function Home() {
 
   const [listTask, setListTask] = useState<string[]>([]);
   const [createTask, setCreateTask] = useState("");
-  const [taskCompleted, setTTaskCompleted] = useState<{
-    [key: string]: boolean;
-  }>({});
+  const [taskCompleted, setTTaskCompleted] = useState<Record<string, boolean>>(
+    {}
+  );
 
   //CALCULA CONCLUIDAS
   const countCompletedTasks = Object.keys(taskCompleted).length;
@@ -61,9 +61,10 @@ export function Home() {
   }
   //CONCLUIR
   function handletaskCompleted(taskComplet: string) {
-    const updateTaskCompleted = { ...taskCompleted, [taskComplet]: true };
-
-    setTTaskCompleted(updateTaskCompleted);
+    setTTaskCompleted((oldTaskList) => ({
+      ...oldTaskList,
+      [taskComplet]: !oldTaskList[taskComplet],
+    }));
   }
 
   return (
@@ -95,12 +96,15 @@ export function Home() {
         <View style={styles.progress}>
           <Text style={styles.progressTextCreate}>Criadas </Text>
           <Text style={styles.count}>
-            <Text style={styles.countText}>{listTask.length}</Text>
+            <Text style={styles.countText}> {listTask.length}</Text>
           </Text>
 
           <Text style={styles.progressTextCompleted}>Concluídas </Text>
           <Text style={styles.count}>
-            <Text style={styles.countText}>{countCompletedTasks}</Text>
+            <Text style={styles.countText}>
+              {" "}
+              {Object.values(taskCompleted).filter(Boolean).length}
+            </Text>
           </Text>
         </View>
 
