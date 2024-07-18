@@ -47,7 +47,7 @@
 
 # Features
 Desafios adicionais inserido ao projeto:
-- [x] Adicionar o url do git a plataforma Rocketseat.
+- [x] Adicionar a url do repositorio git a plataforma Rocketseat.
 - [x] Atualizar as imagens do `assets`, personalizando todo App
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
 
@@ -58,7 +58,7 @@ Desafios adicionais inserido ao projeto:
 <li>TypeScript</li>
 <li>Lucidi-icon</li>
 <li>Android Studio</li>
-<li>Expo-GO</li>
+<li>Expo Go</li>
 </ul>
 
 # Executar
@@ -68,7 +68,7 @@ Desafios adicionais inserido ao projeto:
 <b>2</b> - Após selecione a última opção <b>"Download ZIP"</b>,</br>
 <b>3</b> - Descompacte o arquivo após o download.</br>
 <b>4</b> - Abra a pasta raiz do projeto dentro do <b>VSCODE. </br>
-<b>5</b> - Com o projeto aberto no vscode inicie a aplicação no terminal com o comando <b>npx expo start</b>.
+<b>5</b> - Com o projeto aberto no vscode inicie a aplicação no terminal com o comando <b>npx expo start</b>.</br>
 <b>6</b> - Configure o <b>Android Studio</b> e inicie o smartphone emulado</br>
 <b>7</b> - No terminal clique na tecla <b>"A"</b> o app Expo-go sera instalado automaticamente e o app sera carregado.</br>
 
