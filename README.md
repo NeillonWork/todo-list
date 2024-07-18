@@ -52,9 +52,8 @@ Desafios adicionais inserido ao projeto:
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
 - [] Adicionar novos Alerts para melhorar a navegabilidade(opcional)
 - [] Salvar lista de tarefas no dispositivo offline(opcional)
-- [] Ajustar logico do contador "Concluidas" ao exluir Tasks completas(Melhoria) {
-    **adicionar trava onde s´é possivel excluir tarefas não concluidas
-}
+- [] Ajustar logico do contador "Concluidas" ao exluir Tasks completas(Melhoria) 
+        {**adicionar trava onde só é possivel excluir tarefas não concluidas}
 
 # Tecnologias
 <ul>
