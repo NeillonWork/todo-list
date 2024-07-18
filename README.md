@@ -36,7 +36,7 @@
 
 # Sobre
 <p>
-    Estudo realizado através da conclusão do modulo 01 de React-Native - Rocketseat. Aaplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
+    Estudo realizado através da conclusão do modulo 01 de React-Native - Rocketseat. Aplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
 </p>
 <ul>
 <li>Adicionar uma nova tarefa</li>
@@ -50,13 +50,15 @@ Desafios adicionais inserido ao projeto:
 - [x] Adicionar a url do repositorio git a plataforma Rocketseat.
 - [x] Atualizar as imagens do `assets`, personalizando todo App
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
+- [] Adicionar novos Alerts para melhorar a navegabilidade(opcional)
+- [] Salvar lista de tarefas no dispositivo offline(opcional)
 
 # Tecnologias
 <ul>
 <li>React-Native</li>
-<li>Expo</li>
+<li>Expo - Managed Workflow</li>
 <li>TypeScript</li>
-<li>Lucidi-icon</li>
+<li>lucide-react-native</li>
 <li>Android Studio</li>
 <li>Expo Go</li>
 </ul>
