@@ -1,14 +1,20 @@
+import { Container } from "lucide-react-native";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  card: {
+  container:{
     flex: 1,
+  },
+  card: {
     flexDirection: "row",
     borderRadius: 8,
     backgroundColor: "#333333",
     marginBottom: 5,
     padding: 10,
     alignItems: "center",
+  },
+  completedCard: {
+    backgroundColor: "#262626",
   },
   cardCircle: {
     padding: 10,
@@ -22,5 +28,9 @@ export const styles = StyleSheet.create({
     flex: 1,
     fontSize: 14,
     color: "#F2F2F2",
+  },
+  completedText: {
+    textDecorationLine: "line-through",
+    color: "#808080",
   },
 });

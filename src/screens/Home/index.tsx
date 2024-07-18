@@ -15,6 +15,12 @@ import { Tasks } from "../../components/Tasks";
 export function Home() {
   const [listTask, setListTask] = useState<string[]>([]);
   const [createTask, setCreateTask] = useState("");
+  const [taskCompleted, setTTaskCompleted] = useState<{
+    [key: string]: boolean;
+  }>({});
+
+  //CALCULA CONCLUIDAS
+  const countCompletedTasks = Object.keys(taskCompleted).length;
 
   //ADICIONAR
   function handleTaskAdd() {
@@ -29,21 +35,33 @@ export function Home() {
 
     setCreateTask("");
   }
-
   //REMOVER
   function handleTaskRemove(task: string) {
     // filtra minha listTask e retorna todos os createTask menos o task
     // return console.log(listTask.filter(createTask => createTask !== task))
-    Alert.alert("Excluir tarefa", `Deseja realmente deletar esta tarefa? ${task}`, [
-      {
-        text: "Sim",
-        onPress: () => setListTask((oldListTask) => oldListTask.filter(createTask => createTask !== task))
-      },
-      {
-        text: "Não",
-        style: "cancel",
-      },
-    ]);
+    Alert.alert(
+      "Excluir tarefa",
+      `Deseja realmente deletar esta tarefa? ${task}`,
+      [
+        {
+          text: "Sim",
+          onPress: () =>
+            setListTask((oldListTask) =>
+              oldListTask.filter((createTask) => createTask !== task)
+            ),
+        },
+        {
+          text: "Não",
+          style: "cancel",
+        },
+      ]
+    );
+  }
+  //CONCLUIR
+  function handletaskCompleted(taskComplet: string) {
+    const updateTaskCompleted = { ...taskCompleted, [taskComplet]: true };
+
+    setTTaskCompleted(updateTaskCompleted);
   }
 
   return (
@@ -78,7 +96,7 @@ export function Home() {
 
           <Text style={styles.progressTextCompleted}>Concluídas </Text>
           <Text style={styles.count}>
-            <Text style={styles.countText}>25</Text>
+            <Text style={styles.countText}>{countCompletedTasks}</Text>
           </Text>
         </View>
 
@@ -91,10 +109,12 @@ export function Home() {
               key={item}
               taskText={item}
               onRemove={() => handleTaskRemove(item)}
+              taskCompleted={() => handletaskCompleted(item)}
+              completed={taskCompleted[item] || false}
             />
           )}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ paddingBottom: 40 }} // Adiciona espaço inferior para rolagem
+          contentContainerStyle={{ paddingBottom: 40 }}
           ListEmptyComponent={() => (
             <View style={styles.EmptyText}>
               <Image
