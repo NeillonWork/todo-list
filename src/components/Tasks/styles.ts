@@ -2,7 +2,7 @@ import { Container } from "lucide-react-native";
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container:{
+  container: {
     flex: 1,
   },
   card: {
@@ -12,6 +12,8 @@ export const styles = StyleSheet.create({
     marginBottom: 5,
     padding: 10,
     alignItems: "center",
+    borderWidth: 1,
+    borderColor: "#454545",
   },
   completedCard: {
     backgroundColor: "#262626",
