@@ -28,9 +28,9 @@
         <td>Tarefas concluidas</td>
     </tr>
     <tr>
-        <td><img src="./image/ReadmeDesktop.jpg"/></td>
-        <td><img src="./image/ReadmeMobile.jpg" /></td>
-        <td><img src="./image/ReadmeAvatar.png" /></td>
+        <td><img src="./image/ReadmeVazia.jpg"/></td>
+        <td><img src="./image/ReadmeTarefas.jpg" /></td>
+        <td><img src="./image/ReadmeTarefasConcluidas.jpg" /></td>
     </tr>
 </table>
 

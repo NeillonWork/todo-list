@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
   },
   completedCard: {
     backgroundColor: "#262626",
+    borderColor: "#5E60CE",
   },
   cardCircle: {
     padding: 10,
