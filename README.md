@@ -52,6 +52,7 @@ Desafios adicionais inserido ao projeto:
 - [x] Adicionar plugin do babel, modulo-resolver para alias(opcional)
 - [x] Criar Theme(opcional)
 - [x] Adicioner fonte <strong>Inter:</strong> regular & bold
+- [x] Instalar Styled components
 - [] Customizar o style fontLoaded da pagina App.tsx()
 - [] Migrar do Styleeshet para o <strong>Styled components</strong>
 

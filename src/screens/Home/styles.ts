@@ -1,5 +1,11 @@
 import { StyleSheet } from "react-native";
 
+/*
+import styled from "styled-components/native";
+
+ADD aqui migração para styled-components
+*/
+
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
