@@ -49,9 +49,12 @@
 Desafios adicionais inserido ao projeto:
 - [x] Adicionar a url do repositorio git a plataforma Rocketseat.
 - [x] Atualizar as imagens do `assets`, personalizando todo App
-- [] Adicionar plugin do babel, modulo-resolver para alias(opcional)
-- [] Criar Theme(opcional)
+- [x] Adicionar plugin do babel, modulo-resolver para alias(opcional)
+- [x] Criar Theme(opcional)
+- [x] Adicioner fonte <strong>Inter:</strong> regular & bold
+- [] Customizar o style fontLoaded da pagina App.tsx()
 - [] Migrar do Styleeshet para o <strong>Styled components</strong>
+
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
 - [] Adicionar novos Alerts para melhorar a navegabilidade(opcional)
 - [] Salvar lista de tarefas no dispositivo offline(opcional)

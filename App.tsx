@@ -1,7 +1,14 @@
 import { Home } from "@screens/Home";
-import { StatusBar } from "react-native";
+import { ActivityIndicator, StatusBar } from "react-native";
+import {
+  useFonts,
+  Inter_400Regular,
+  Inter_700Bold,
+} from "@expo-google-fonts/inter";
 
 export default function App() {
+  const [fontLoaded] = useFonts({ Inter_400Regular, Inter_700Bold });
+
   return (
     <>
       <StatusBar
@@ -9,7 +16,7 @@ export default function App() {
         backgroundColor={"transparent"}
         translucent
       />
-      <Home />
+      {fontLoaded ? <Home /> : <ActivityIndicator />}
     </>
   );
 }
