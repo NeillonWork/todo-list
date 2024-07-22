@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import { styles } from "./styles";
+import { styles } from "@components/Tasks/styles";
 import { Circle, CircleCheck, Trash2 } from "lucide-react-native";
 
 type Props = {

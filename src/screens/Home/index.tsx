@@ -8,9 +8,9 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { styles } from "./styles";
+import { styles } from "@screens/Home/styles";
 import { CirclePlus } from "lucide-react-native";
-import { Tasks } from "../../components/Tasks";
+import { Tasks } from "@components/Tasks/";
 
 export function Home() {
   const [isFocused, setIsFocused] = useState(false);
@@ -72,7 +72,7 @@ export function Home() {
       {/*Logo*/}
       <View style={styles.logoBox}>
         <Image
-          source={require("../../../assets/logo.png")}
+          source={require("@assets/logo.png")}
           style={styles.logoImage}
         />
       </View>
