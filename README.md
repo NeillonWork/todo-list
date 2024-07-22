@@ -49,6 +49,9 @@
 Desafios adicionais inserido ao projeto:
 - [x] Adicionar a url do repositorio git a plataforma Rocketseat.
 - [x] Atualizar as imagens do `assets`, personalizando todo App
+- [] Adicionar plugin do babel, modulo-resolver para alias(opcional)
+- [] Criar Theme(opcional)
+- [] Migrar do Styleeshet para o <strong>Styled components</strong>
 - [] Compartilhar projeto no <a href="https://www.linkedin.com/in/neillonalmeida/" target="_blank">Linkedin </a>.
 - [] Adicionar novos Alerts para melhorar a navegabilidade(opcional)
 - [] Salvar lista de tarefas no dispositivo offline(opcional)
@@ -61,6 +64,7 @@ Desafios adicionais inserido ao projeto:
 <li>Expo - Managed Workflow</li>
 <li>TypeScript</li>
 <li>lucide-react-native</li>
+<li>Styled components</li>
 <li>Android Studio</li>
 <li>Expo Go</li>
 </ul>
